@@ -19,26 +19,39 @@
 
 </head>
 <body>
+<?php
+require 'scripts/settings.php';
+
+ ?>
 
 	<div class="header">
-		<div class="col-md-10">
-			Хедер страницы
+<div class="container">
+	<div class="row">
+				<div class="col-md-10">
+			<?php
+				echo $org;
+			 ?>
 		</div>
 		<div class="col-md-2">
 			Документи/бланки
 		</div>
 	</div>
+</div>
+	</div>
 
 	<div class="container">
-		<div class="col-md-10">
-			
+<div class="row">
+			<div class="col-md-10">
+			<?php
+			require 'docs/tov/centers.php';
+			 ?>
 		</div>
 		<div class="col-md-2">
 		<span>Фірма</span><br>
 			<a href="docs/tov/dovidka.php">Довідка</a><br>
 			<a href="docs/tov/ozn.php">Ознайомлення</a><br>
 			<a href="docs/tov/doruch.html">Доручення</a><br>
-			<a href="docs/tov/centers.html">Центри сертифікації</a><br>
+			<a href="docs/tov/centers.php">Центри сертифікації</a><br>
 			<br>
 			<span>Фіз. особа</span><br>
 			<a href="#">Довідка</a><br>
@@ -49,6 +62,7 @@
 			<a href="#">Документи для ПДГ</a><br>
 			<a href="#">Документи для розмитнення</a><br>
 		</div>
+</div>
 	</div>
 	
 	<div class="hidden"></div>
@@ -59,7 +73,6 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	<i class="fa fa-adjust" aria-hidden="true"></i>
 	<script src="libs/jquery/jquery-3.1.1.min.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 	
